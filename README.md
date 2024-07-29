@@ -13,3 +13,17 @@ PRE-REQUISITES FOR RUNNING LOCALLY
 
 PRE-TRAINED MODEL 'BERT'
 + https://huggingface.co/transformers/v4.8.2/model_doc/bert.html?highlight=berttokenizer
+
+WARNING MESSAGES
+
++ A parameter name that contains `beta` will be renamed internally to `bias`. Please use a different name to suppress this warning.
++ Some weights of BertForQuestionAnswering were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['qa_outputs.bias', 'qa_outputs.weight']
++ You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+EXCEPTION MESSAGES
+
++ The size of tensor a (XXX) must match the size of tensor b (YYY) at non-singleton dimension 1
+    * This is because, BERT uses word-piece tokenization. If any of the word is not in the vocabulary, it splits the word to it's word pieces. Example: if "playing" is not in the vocabulary, it can split down to "play", "##ing". This increases the amount of tokens in a given sentence after tokenization. You can specify certain parameters to get fixed length tokenization:
+    * tokenized_sentence = tokenizer.encode(test_sentence, padding=True, truncation=True,max_length=50, add_special_tokens = True)
+    * https://huggingface.co/transformers/v4.8.2/model_doc/bert.html?highlight=berttokenizer
+    * https://huggingface.co/transformers/v4.8.2/main_classes/tokenizer.html#transformers.PreTrainedTokenizer.encode
