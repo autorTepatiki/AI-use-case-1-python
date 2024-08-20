@@ -17,6 +17,8 @@ PRE-REQUISITES FOR INSTALLING LOCALLY (IN THE CASE OF RUNNING LOCALLY)
 + PyTorch > 2.0 installed , visit : https://pytorch.org/get-started/locally/
     * pip install torch==2.3.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/cu121
 
+![installing torch](./images/installing-torch.png)
+
 CREATE YOUR SPECIFIC ENVIRONMENT VARIABLES (.env) FOR ACCESING A SAMPLE BUCKET IN AWS
 + export AWS_ACCESS_KEY_ID="xxxxxxxxxxxxxxxx"
 + export AWS_SECRET_ACCESS_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
