@@ -44,3 +44,5 @@ RUN
     * https://huggingface.co/transformers/v4.8.2/model_doc/bert.html?highlight=berttokenizer
     * https://huggingface.co/transformers/v4.8.2/main_classes/tokenizer.html#transformers.PreTrainedTokenizer.encode
 
+FINALLY: MUST BE TENSOR ERROR
+![tensor](./images/must-be-tensor.png)
