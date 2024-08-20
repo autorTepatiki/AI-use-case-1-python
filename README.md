@@ -1,4 +1,4 @@
-README
+README FIRST
 
 PRE-REQUISITES 
 + Install the PYTHON language from scratch, in the given operating system you have. Refer to https://www.python.org/downloads/ 
