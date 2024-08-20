@@ -11,7 +11,7 @@ PRE-REQUISITES FOR THE PYTHON LANGUAGE
     * pip install sagemaker
     * pip install transformers
 
-![installing](./images/installng.png)
+![installing](./images/installing.png)
 
 PRE-REQUISITES FOR RUNNING LOCALLY
 + PyTorch > 2.0 installed , visit : https://pytorch.org/get-started/locally/

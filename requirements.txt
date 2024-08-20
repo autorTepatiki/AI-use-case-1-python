@@ -2,4 +2,4 @@ boto3
 PyPDF2
 sagemaker
 transformers
-torch
+
