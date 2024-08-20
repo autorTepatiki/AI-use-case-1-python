@@ -1,11 +1,17 @@
 README
 
+PRE-REQUISITES 
++ Install the PYTHON language from scratch, in the given operating system you have. Refer to https://www.python.org/downloads/ 
++ Don´t frget to install the Python Package Manager, "pip". E.g. if under Ubuntu: "sudo apt-get install pip"
+
 PRE-REQUISITES FOR THE PYTHON LANGUAGE
-+ pip install -r requirements.txt 
++ run install.sh, "pip install -r requirements.txt" 
 + Alternativelly, per library:
     * pip install boto3
     * pip install sagemaker
     * pip install transformers
+
+![installing](./images/installng.png)
 
 PRE-REQUISITES FOR RUNNING LOCALLY
 + PyTorch > 2.0 installed , visit : https://pytorch.org/get-started/locally/

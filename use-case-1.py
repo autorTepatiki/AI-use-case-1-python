@@ -14,12 +14,13 @@ model = BertForQuestionAnswering.from_pretrained(model_name)
 
 # Procesa el texto del PDF y genera respuestas
 def generate_response(text):
+    text = str(text)
+
     # https://huggingface.co/transformers/v4.8.2/internal/tokenization_utils.html#transformers.tokenization_utils_base.PreTrainedTokenizerBase.encode_plus
-    inputs = tokenizer.encode_plus(text, return_tensors='pt', add_special_tokens=True, max_length=512, padding=True, truncation=True)
+    inputs = tokenizer.encode_plus(text, return_tensors='pt', add_special_tokens=True, max_length=512, truncation=True)
  
-    # optionally:
-    # https://huggingface.co/transformers/v4.8.2/main_classes/tokenizer.html#transformers.PreTrainedTokenizer.encode
-    # inputs = tokenizer.encode(text, padding=True, truncation=True, max_length=512, add_special_tokens=True,  return_tensors='pt')
+    # optionally: https://huggingface.co/transformers/v4.8.2/main_classes/tokenizer.html#transformers.PreTrainedTokenizer.encode
+    #inputs = tokenizer.encode(text, padding=True, truncation=True, max_length=512, add_special_tokens=True,  return_tensors='pt')
 
     start_scores, end_scores = model(**inputs)
     start_idx = torch.argmax(start_scores)

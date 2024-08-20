@@ -1,4 +1,5 @@
 boto3
+PyPDF2
 sagemaker
 transformers
-PyPDF2
+torch
