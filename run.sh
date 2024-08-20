@@ -1,3 +1,3 @@
 #/bin/bash
-source .env
+#source .env
 python3 use-case-1.py 

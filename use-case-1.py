@@ -6,6 +6,7 @@ import transformers
 from transformers import BertTokenizer, BertForQuestionAnswering
 import torch
 from io import BytesIO
+import os
 
 # Descarga el modelo pre-entrenado BERT
 model_name = 'bert-base-uncased'
@@ -29,10 +30,10 @@ def generate_response(text):
     return answer
 
 # Configura la sesion de libreria boto (para AWS por entorno)
-# session = boto3.Session(
-#    aws_access_key_id=os.environ["AWS_ACCESS_KEY_ID"],
-#    aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"],
-# )
+session = boto3.Session(
+    aws_access_key_id=os.environ["AWS_ACCESS_KEY_ID"],
+    aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"],
+)
 # Configura el cliente de S3
 s3 = boto3.client('s3')
 bucket_name = 'demo-exercises'
