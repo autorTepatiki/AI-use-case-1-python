@@ -13,7 +13,7 @@ PRE-REQUISITES FOR THE PYTHON LANGUAGE
 
 ![installing](./images/installing.png)
 
-PRE-REQUISITES FOR RUNNING LOCALLY
+PRE-REQUISITES FOR INSTALLING LOCALLY (IN THE CASE OF RUNNING LOCALLY)
 + PyTorch > 2.0 installed , visit : https://pytorch.org/get-started/locally/
     * pip install torch==2.3.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/test/cu121
 
