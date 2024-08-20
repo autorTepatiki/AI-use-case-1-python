@@ -2,7 +2,7 @@ README
 
 PRE-REQUISITES 
 + Install the PYTHON language from scratch, in the given operating system you have. Refer to https://www.python.org/downloads/ 
-+ Don´t frget to install the Python Package Manager, "pip". E.g. if under Ubuntu: "sudo apt-get install pip"
++ Don´t forget to install the Python Package Manager, "pip". E.g. if under Ubuntu: "sudo apt-get install pip"
 
 PRE-REQUISITES FOR THE PYTHON LANGUAGE
 + run install.sh, "pip install -r requirements.txt" 
